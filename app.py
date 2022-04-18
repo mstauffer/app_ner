@@ -2,6 +2,7 @@ import os
 import streamlit as st
 import pickle as pkl
 import numpy as np
+import nltk
 from tensorflow import keras
 from nltk.tokenize import RegexpTokenizer, word_tokenize
 from tensorflow.keras.preprocessing.sequence import pad_sequences
