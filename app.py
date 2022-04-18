@@ -78,6 +78,9 @@ if 'idx2tag' not in st.session_state:
 if 'word2idx' not in st.session_state:
     st.session_state['word2idx'] = carregar_pickle('word2idx.pkl')
 
+if 'punkt' not in st.session_state:
+    st.session_state['punkt'] = call_nltk_punkt()
+
 st.title("Detector de entidades nomeadas")
 
 txt = st.text_area('Insira um ato para encontrar entidades')
